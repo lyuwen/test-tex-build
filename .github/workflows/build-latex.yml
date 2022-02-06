@@ -25,11 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - uses: lyuwen/build-latex-action@9fe267dbf3dbaaa18be6ad9ed2a51a7f2819fddd
+      - uses: lyuwen/build-latex-action@ee69d5da797d1f31c265cd309de1313d1dd4368e
         id: texbuild
         with:
           file: 'main.tex'
 
       # Runs a single command using the runners shell
       - name: Show build result
-        run: echo "File ${{ steps.textbuild.outputs.output }} was built successfully!"
+        run: echo "File ${{ steps.texbuild.outputs.output }} was built successfully!"
