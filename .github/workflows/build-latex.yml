@@ -27,7 +27,8 @@ jobs:
       
       - uses: lyuwen/build-latex-action@7e9cf769c1218504ea2edc06561dedbb9bd8c9d2
         id: texbuild
-        file: 'main.tex'
+        with:
+          file: 'main.tex'
 
       # Runs a single command using the runners shell
       - name: Show build result
