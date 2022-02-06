@@ -25,7 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - uses: lyuwen/build-latex-action@5a92d81a3d22319b3e4bd1bb6cc54fe52bf0c864
+      - uses: lyuwen/build-latex-action@9fe267dbf3dbaaa18be6ad9ed2a51a7f2819fddd
         id: texbuild
         with:
           file: 'main.tex'
